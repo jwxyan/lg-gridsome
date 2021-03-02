@@ -14,7 +14,7 @@
           v-for="edge in $page.posts.edges"
           :key="edge.node.id"
         >
-          <g-link :to="'/projects' + edge.node.linkUrl" class="project-link">
+          <g-link :to="'/projects/' + edge.node.linkUrl" class="project-link">
             <g-image
               :src="edge.node.image"
               class="thumbnail g-image g-image--loaded"
@@ -30,8 +30,8 @@
             /></noscript>
             <h3 class="project-title">{{ edge.node.title }}</h3>
             <div class="categories">
-              <span class="category">photography</span
-              ><span class="category">{{ edge.node.color }}</span>
+              <span class="category">{{ edge.node.categories[0] }}</span
+              ><span class="category">{{ edge.node.categories[1] }}</span>
             </div></g-link
           >
         </div>
@@ -49,7 +49,7 @@ query {
       node {
         id
         title
-        color
+        categories
         linkUrl
         image
       }

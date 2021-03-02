@@ -8,7 +8,7 @@
     <g-link
       v-for="edge in $page.posts.edges"
       :key="edge.node.id"
-      :to="'/journal' + edge.node.linkUrl"
+      :to="'/journal/' + edge.node.linkUrl"
       class="journal-post"
     >
       <div class="container journal">

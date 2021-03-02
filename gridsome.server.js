@@ -17,28 +17,28 @@ module.exports = function (api) {
     JournalList.addNode({
       id: '1',
       title: 'Gridsome with Forestry CMS',
-      linkUrl: '/gridsome-forestry-cms/',
+      linkUrl: 'gridsome-forestry-cms',
       excerpt: '  Get up and running with Forestry CMS, a git-backed headless CMS with a slick editing interface.'
     })
 
     JournalList.addNode({
       id: '2',
       title: 'VueJS for your next project',
-      linkUrl: '/use-gridsome-vuejs/',
+      linkUrl: 'use-gridsome-vuejs',
       excerpt: 'Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.'
     })
 
     JournalList.addNode({
       id: '3',
       title: 'macOS development environment',
-      linkUrl: '/macos-development-environment/',
+      linkUrl: 'macos-development-environment',
       excerpt: 'Get up and running with a fresh macOS Catalina install'
     })
 
     JournalList.addNode({
       id: '4',
       title: 'About Typography',
-      linkUrl: '/a-journal-entry/',
+      linkUrl: 'a-journal-entry',
       excerpt: 'Font face, vertical rythm, readability, this long fake text should flow.'
     })
 
@@ -47,33 +47,41 @@ module.exports = function (api) {
     GraphList.addNode({
       id: '1',
       title: 'Banana',
-      color: 'pink',
-      linkUrl: '/chelsea-landmark/',
-      image: '/img/mike-dorner-173502-unsplash.jpg'
+      categories:['photography','pink'],
+      year:'2019',
+      linkUrl: 'chelsea-landmark',
+      image: '/img/mike-dorner-173502-unsplash.jpg',
+      article:''
     })
 
     GraphList.addNode({
       id: '2',
       title: 'Pineapple',
-      color: 'blue',
-      linkUrl: '/sunk/',
-      image: '/img/cody-davis-253925-unsplash.jpg'
+      categories:['photography','blue'],
+      year:'2019',
+      linkUrl: 'sunk',
+      image: '/img/cody-davis-253925-unsplash.jpg',
+      article:''
     })
 
     GraphList.addNode({
       id: '3',
       title: 'Ice Cream',
-      color: 'yellow',
-      linkUrl: '/3d-graff/',
-      image: '/img/ian-dooley-281897-unsplash.jpg'
+      categories:['photography','yellow'],
+      year:'2019',
+      linkUrl: '3d-graff',
+      image: '/img/ian-dooley-281897-unsplash.jpg',
+      article:''
     })
 
     GraphList.addNode({
       id: '4',
       title: 'Porta400',
-      color: 'yellow',
-      linkUrl: '/ios-concept/',
-      image: '/img/markus-spiske-516263-unsplash.jpg'
+      categories:['photography','yellow'],
+      year:'2019',
+      linkUrl: 'ios-concept',
+      image: '/img/markus-spiske-516263-unsplash.jpg',
+      article:''
     })
 
   })

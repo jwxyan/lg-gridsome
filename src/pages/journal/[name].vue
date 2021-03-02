@@ -1,10 +1,12 @@
 <template>
-  <Layout> </Layout>
+  <Layout>
+
+  </Layout>
 </template>
 
 <script>
 export default {
-  name: "Detail",
+  name: "JournalDetail",
 };
 </script>
 
