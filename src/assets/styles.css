@@ -345,7 +345,7 @@ h6 {
 	color: var(--color-base-1)
 }
 
-.journal-header {
+.journal-header-1 {
 	font-size: 3rem;
 	font-weight: 700;
 	padding: 0;
@@ -359,7 +359,7 @@ h6 {
 	transition: background .5s ease
 }
 
-.journal-post> {
+.journal-post {
 	transition: transform .5s ease
 }
 
@@ -367,7 +367,7 @@ h6 {
 	background-color: var(--color-base-1)
 }
 
-.journal-post:hover> {
+.journal-post:hover {
 	transform: translateX(4rem)
 }
 
@@ -377,7 +377,7 @@ h6 {
 	padding: 0
 }
 
-.journal-title {
+.journal-title-1 {
 	font-size: 2rem;
 	color: var(--color-contrast)
 }
