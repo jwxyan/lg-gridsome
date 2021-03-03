@@ -31,6 +31,9 @@
 
 <script>
 export default {
+  metaInfo: {
+    title: "Concact",
+  },
   name: "Concact",
 };
 </script>

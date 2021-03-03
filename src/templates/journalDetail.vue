@@ -21,7 +21,10 @@
             </div>
           </div>
         </div>
-        <div class="journal-content"></div>
+        <div
+          class="journal-content"
+          v-html="$page.posts2.edges[0].node.content"
+        ></div>
       </div>
     </div>
   </Layout>
@@ -36,20 +39,32 @@ query($type: String) {
   ) {
     edges {
       node {
-      id
-      title
-      author
-      date
-      time
-      article
+        id
+        title
+        author
+        date
+        time
+      }
+    }
+  }
+    posts2: allJArticlePost(filter: { fileInfo: { name: { eq: $type } } }) {
+    edges {
+      node {
+        content
       }
     }
   }
 }
+
 </page-query>
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.$page.posts.edges[0].node.title,
+    };
+  },
   name: "JournalDetail",
 };
 </script>

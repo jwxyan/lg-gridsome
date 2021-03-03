@@ -38,6 +38,9 @@ query {
 
 <script>
 export default {
+  metaInfo: {
+    title: "Journal",
+  },
   name: "Journal",
 };
 </script>

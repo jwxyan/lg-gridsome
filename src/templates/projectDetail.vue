@@ -22,13 +22,14 @@
             </div>
           </div>
         </div>
-        <div class="content"></div>
+        <div class="content" v-html="$page.posts2.edges[0].node.content"></div>
       </div>
     </div>
   </Layout>
 </template>
 
 <page-query>
+# Write your query or mutation here
 query($type: String) {
   posts: allGraphLists(
     sortBy: "id"
@@ -42,15 +43,27 @@ query($type: String) {
         linkUrl
         categories
         year
-        article
+      }
+    }
+  }
+  posts2: allPArticlePost(filter: { fileInfo: { name: { eq: $type } } }) {
+    edges {
+      node {
+        content
       }
     }
   }
 }
+
 </page-query>
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.$page.posts.edges[0].node.title,
+    };
+  },
   name: "ProjectDetail",
 };
 </script>

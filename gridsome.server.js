@@ -22,7 +22,6 @@ module.exports = function (api) {
       author: 'Nichlas W. Andersen',
       date: '7. June 2019',
       time: '1 min read',
-      article: ''
     })
 
     JournalList.addNode({
@@ -33,7 +32,6 @@ module.exports = function (api) {
       author: 'Nichlas W. Andersen',
       date: '4. June 2019',
       time: '1 min read',
-      article: ''
     })
 
     JournalList.addNode({
@@ -44,7 +42,6 @@ module.exports = function (api) {
       author: 'Nichlas W. Andersen',
       date: '18. May 2019',
       time: '1 min read',
-      article: ''
     })
 
     JournalList.addNode({
@@ -55,7 +52,6 @@ module.exports = function (api) {
       author: 'Nichlas W. Andersen',
       date: '17. May 2019',
       time: '2 min read',
-      article: ''
     })
 
     //GraphList
@@ -67,7 +63,6 @@ module.exports = function (api) {
       year: '2019',
       linkUrl: 'chelsea-landmark',
       image: '/img/mike-dorner-173502-unsplash.jpg',
-      article: ''
     })
 
     GraphList.addNode({
@@ -77,7 +72,6 @@ module.exports = function (api) {
       year: '2019',
       linkUrl: 'sunk',
       image: '/img/cody-davis-253925-unsplash.jpg',
-      article: ''
     })
 
     GraphList.addNode({
@@ -87,7 +81,6 @@ module.exports = function (api) {
       year: '2019',
       linkUrl: '3d-graff',
       image: '/img/ian-dooley-281897-unsplash.jpg',
-      article: ''
     })
 
     GraphList.addNode({
@@ -97,7 +90,6 @@ module.exports = function (api) {
       year: '2019',
       linkUrl: 'ios-concept',
       image: '/img/markus-spiske-516263-unsplash.jpg',
-      article: ''
     })
 
   })
