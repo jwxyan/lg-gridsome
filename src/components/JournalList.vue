@@ -6,7 +6,7 @@
     <div class="latest-journals">
       <div class="container">
         <g-link
-          :to="'/journal' + edge.node.linkUrl"
+          :to="'/journal/' + edge.node.linkUrl"
           class="journal"
           v-for="edge in $static.posts.edges"
           :key="edge.node.id"
